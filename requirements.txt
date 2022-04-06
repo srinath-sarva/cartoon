@@ -7,7 +7,6 @@ colorama==0.4.4
 dj-database-url==0.5.0
 Django==3.2.12
 django-heroku==0.3.1
-dlib==19.23.1
 face-recognition-models==0.3.0
 google-auth==2.6.0
 google-auth-oauthlib==0.5.0
