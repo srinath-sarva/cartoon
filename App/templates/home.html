@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<style>
+    #img {
+  width: 400px;
+  height:auto;
+  border: solid 2px red;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="">
+    <center>
+        <br>
+        <br>
+        <h1 class="text-primary"> SARVA CARTOON MAKER </h1>
+    <form action="" class="form-control" enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        <input type="file" class="form-control" accept="image/*;capture=camera" name="image">
+        <br>
+        <br>
+        <button class="btn btn-warning">Submit</button>
+    </form>
+    <br>
+    <br>
+    <img  id="img" class="card-img-top" src="{{output}}" alt="" download>
+<br>
+
+    </center>
+    <br>
+    
+</body>
+
+</html>
