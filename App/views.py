@@ -43,7 +43,7 @@ def home(request):
         cv2.imwrite(k+"."+a,cartoon)
         outfile="/"+k+"."+a
         print(type(cartoon))
-        return render(request,"home.html",{'output':outfile})
+        return render(request,"home.html",{'output':outfile,"text":"click on photo to download"})
 
     return render(request,"home.html",{})
 

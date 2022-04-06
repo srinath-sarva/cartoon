@@ -23,21 +23,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
+<script>
+  
+</script>
 <body style="">
+
     <center>
-        <br>
-        <br>
+        
         <h1 class="text-primary"> SARVA CARTOON MAKER </h1>
-    <form action="" class="form-control" enctype="multipart/form-data" method="POST">
+
+    <form action="" id="form" class="form-control" enctype="multipart/form-data" method="POST">
         {% csrf_token %}
         <input type="file" class="form-control" accept="image/*;capture=camera" name="image">
-        <br>
-        <br>
-        <button class="btn btn-warning">Submit</button>
+        <button  onclick="fun()"class="btn btn-warning">Submit</button>
     </form>
     <br>
     <br>
-    <img  id="img" class="card-img-top" src="{{output}}" alt="" download>
+    <h3 id="text">{{text}}</h3>
+    <a href="{{output}}" download>
+    <img  id="img" class="card-img-top" src="{{output}}" > 
+    </a>
+    <br>
+    <br>
+        
 <br>
 
     </center>
