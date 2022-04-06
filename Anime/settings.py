@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0lzw1)o^r4cm0+ybv%$13d^v3c^dtys)2j$ok+6p4beh8a9pce
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sarva-cartoons.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['cartoonssarva.herokuapp.com','127.0.0.1']
 
 
 # Application definition
